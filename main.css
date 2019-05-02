@@ -1,0 +1,14 @@
+  
+html{
+    overflow: hidden;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    position: absolute;
+    right:150px;
+    font-size: 5em;
+    color:white;
+    top:calc(50% - 150px);
+    font-family: 'Abel', sans-serif;
+}

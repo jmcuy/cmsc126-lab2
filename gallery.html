@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Gallery</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="gallery.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="top-nav">
+            <div class="menu" onclick="openNav()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div  class="logo">
+                WORLD OF <font style="color:rgb(78, 190, 255);">DANCE</font>
+            </div>
+            
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="instructions.html">How it works</a>
+            
+        </div>
+          
+ 
+        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+        <div class="main" id="main1">
+            <div class="card" id="1">
+                <img src="japan.png" onclick="display_modal(1)" style="width:100%">
+                <div class="container">
+                  JAPAN
+                </div>
+            </div>
+            <div class="card" id="2">
+                <img src="spain.jpg" onclick="display_modal(2)" style="width:100%">
+                <div class="container">
+                  SPAIN
+                </div>
+            </div>
+            <div class="card" id="3">
+                <img src="phil.jpg" onclick="display_modal(3)" style="width:100%">
+                <div class="container">
+                  PHILIPPINES
+                </div>
+            </div>
+            <div class="arrow-key">
+                <i class="fas fa-arrow-right" onclick="next()"></i>
+            </div>
+            
+            
+        </div>
+        <div class="main" id="main2">
+            <div class="card" id="4">
+                <img src="thai.jpg" onclick="display_modal(4)"  style="width:100%">
+                <div class="container">
+                  THAILAND
+                </div>
+            </div>
+            <div class="card" id="5">
+                <img src="africa.jpg" onclick="display_modal(5)"  style="width:100%">
+                <div class="container">
+                  AFRICA
+                </div>
+            </div>
+            <div class="arrow-key">
+                <i class="fas fa-arrow-left" onclick="prev()"></i>
+            </div>
+        </div>
+        <div class="main" id="modal">
+            
+        </div>
+    </body>
+    <script src="main.js"></script>
+    <script src="gallery.js"></script>
+</html>
